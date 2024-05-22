@@ -53,7 +53,7 @@
 
 </ul>
 
-## 📱 Live Preview : (https://covidtracker-34f49.web.app/dashboard)
+## 📱 Live Preview : (https://singhamandeep007.github.io/covid-tracker-world/)
 
 ***
 ## 💻 Screenshots
