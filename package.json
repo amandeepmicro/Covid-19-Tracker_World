@@ -2,6 +2,12 @@
   "name": "covidtracker",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
+  "author": {
+    "email": "amandeep.singh.fsd@gmail.com",
+    "name": "Amandeep Singh"
+  },
+  "license": "MIT",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
@@ -10,10 +16,13 @@
     "@testing-library/user-event": "^7.1.2",
     "chart.js": "^2.9.3",
     "elliptic": "^6.5.3",
+    "gh-pages": "^6.1.1",
     "jquery": "^3.5.1",
     "leaflet": "^1.6.0",
     "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
     "numeral": "^2.0.6",
+    "prettier": "^2.8.8",
     "react": "^16.13.1",
     "react-chartjs-2": "^2.10.0",
     "react-countup": "^4.3.3",
@@ -28,7 +37,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss,html,md,json}\"  --config ./.prettierrc.json",
+    "deploy": "run-s format deploy:build deploy:gh-pages",
+    "deploy:build": "npm run build",
+    "deploy:gh-pages": "gh-pages -d build -- --message \"Updates\""
   },
   "eslintConfig": {
     "extends": "react-app"

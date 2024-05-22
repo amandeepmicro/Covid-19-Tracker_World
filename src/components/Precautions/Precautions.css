@@ -1,7 +1,7 @@
-@media (max-width:760px){
-    .carosel{
-        /* padding:40px 20px !important; */
-        
-        width:24.4em !important;
-    }
+@media (max-width: 760px) {
+  .carosel {
+    /* padding:40px 20px !important; */
+
+    width: 24.4em !important;
+  }
 }

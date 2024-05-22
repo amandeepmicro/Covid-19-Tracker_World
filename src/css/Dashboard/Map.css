@@ -1,43 +1,41 @@
-.map{
-    height:500px;
-    background-color: rgb(21, 34, 44);
-    padding: 0.5rem;
-    border-radius: 10px;
-  
-    box-shadow: 0 0 28px -6px rgba(0,0,0,0.5);
+.map {
+  height: 500px;
+  background-color: rgb(21, 34, 44);
+  padding: 0.5rem;
+  border-radius: 10px;
+
+  box-shadow: 0 0 28px -6px rgba(0, 0, 0, 0.5);
 }
 /* leaflet-container comes with Map */
-.map .leaflet-container{
-    /* must set a height as it is 0 by default */
-    height:100%;
+.map .leaflet-container {
+  /* must set a height as it is 0 by default */
+  height: 100%;
 }
-.info-container{
-    width:100%;
-    
+.info-container {
+  width: 100%;
 }
-.info-flag{
-    height:80px;
-    width:100%;
-    background-size: cover;
-    border-radius: 8px;
+.info-flag {
+  height: 80px;
+  width: 100%;
+  background-size: cover;
+  border-radius: 8px;
 }
-.info-name{
-    font-size: 20px;
-    font-weight: bold;
-   
+.info-name {
+  font-size: 20px;
+  font-weight: bold;
 }
-.info-flag img{
-    width:100px;
-    border-radius: 5px;
+.info-flag img {
+  width: 100px;
+  border-radius: 5px;
 }
 .info-confirmed,
 .info-recovered,
 .info-deaths {
-    font-size: 16px;
-    margin-top: 5px;
-    font-family:sans-serif;
+  font-size: 16px;
+  margin-top: 5px;
+  font-family: sans-serif;
 }
-.leaflet-popup-content-wrapper{
-    background-color: rgba(19, 28, 35, 0.863) !important;
-    color:white !important;
+.leaflet-popup-content-wrapper {
+  background-color: rgba(19, 28, 35, 0.863) !important;
+  color: white !important;
 }

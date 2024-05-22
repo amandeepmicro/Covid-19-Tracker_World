@@ -1,155 +1,148 @@
 :root {
-    --active:#007bff;
-    --recovered:#00b217;
-    --deaths:#c80414;
+  --active: #007bff;
+  --recovered: #00b217;
+  --deaths: #c80414;
 }
 
 .infoBox {
-    /* take as much room as it can */
-    flex:1;
-    cursor: pointer;
-    
+  /* take as much room as it can */
+  flex: 1;
+  cursor: pointer;
 }
 /* give all except the last child of parent */
-.infoBox:not(:last-child){
-    margin-right:15px;
+.infoBox:not(:last-child) {
+  margin-right: 15px;
 }
 
-.infoBox_cases{
-    
-    /* color:#cc1034; */
-    font-weight: 600;
-    font-size: 1.9rem;
-    margin-bottom: 0.5rem;
+.infoBox_cases {
+  /* color:#cc1034; */
+  font-weight: 600;
+  font-size: 1.9rem;
+  margin-bottom: 0.5rem;
 }
-.infoBox_total{
- 
-    font-weight: 700 !important;
-    font-size: 1.2rem !important;
-    /* margin-top: 15px !important; */
-    display:grid !important;
+.infoBox_total {
+  font-weight: 700 !important;
+  font-size: 1.2rem !important;
+  /* margin-top: 15px !important; */
+  display: grid !important;
 }
-.infoboxTotalspan{
-    /* display:grid !important; */
-    /* font-size:1.4em; */
+.infoboxTotalspan {
+  /* display:grid !important; */
+  /* font-size:1.4em; */
 }
-.infoBox--green{
-    border-top: 10px solid #00b217;
-    background-color:transparent !important;
-    /* background-color: rgba(0, 178, 24, 0.136) !important; */
+.infoBox--green {
+  border-top: 10px solid #00b217;
+  background-color: transparent !important;
+  /* background-color: rgba(0, 178, 24, 0.136) !important; */
 }
-.infoBox--green .infoTitle{
-    color:var(--recovered)
+.infoBox--green .infoTitle {
+  color: var(--recovered);
 }
-.infoBox--green .infoBox_cases{
-    color:var(--recovered)
+.infoBox--green .infoBox_cases {
+  color: var(--recovered);
 }
-.infoBox--green .infoBox_total{
-    color:var(--recovered)
+.infoBox--green .infoBox_total {
+  color: var(--recovered);
 }
-.infoBox--red{
-    border-top: 10px solid #c80414;
-    background-color:transparent !important;
+.infoBox--red {
+  border-top: 10px solid #c80414;
+  background-color: transparent !important;
 }
-.infoBox--red .infoTitle{
-    color:var(--deaths)
+.infoBox--red .infoTitle {
+  color: var(--deaths);
 }
-.infoBox--red .infoBox_cases{
-    color:var(--deaths)
+.infoBox--red .infoBox_cases {
+  color: var(--deaths);
 }
-.infoBox--red .infoBox_total{
-    color:var(--deaths)
+.infoBox--red .infoBox_total {
+  color: var(--deaths);
 }
-.infoBox--blue{
-    border-top: 10px solid #007bff;
-    background-color:transparent !important;
-    /* background-color: rgba(0, 123, 255, 0.136) !important; */
+.infoBox--blue {
+  border-top: 10px solid #007bff;
+  background-color: transparent !important;
+  /* background-color: rgba(0, 123, 255, 0.136) !important; */
 }
-.infoBox--blue .infoTitle{
-    color:var(--active)
+.infoBox--blue .infoTitle {
+  color: var(--active);
 }
-.infoBox--blue .infoBox_cases{
-    color:var(--active)
+.infoBox--blue .infoBox_cases {
+  color: var(--active);
 }
-.infoBox--blue .infoBox_total{
-    color:var(--active)
+.infoBox--blue .infoBox_total {
+  color: var(--active);
 }
 
-.isHighlighted--blue :hover{
-    border-radius: 5px;
-    cursor: pointer;
-    background: rgba(0, 123, 255, 0.125) !important;
+.isHighlighted--blue :hover {
+  border-radius: 5px;
+  cursor: pointer;
+  background: rgba(0, 123, 255, 0.125) !important;
 }
-.isHighlighted--green :hover{
-    border-radius: 5px;
-    cursor: pointer;   
-    /* z-index: 10 !important;
+.isHighlighted--green :hover {
+  border-radius: 5px;
+  cursor: pointer;
+  /* z-index: 10 !important;
     opacity: 1; */
-    background-color: rgba(0, 178, 24, 0.136) !important;
+  background-color: rgba(0, 178, 24, 0.136) !important;
 }
-.isHighlighted--red :hover{
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: rgba(200, 4, 20, 0.136) !important;
+.isHighlighted--red :hover {
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgba(200, 4, 20, 0.136) !important;
 }
 .isActive--blue {
-    border-radius: 5px;
-    cursor: pointer;
-    background: rgba(0, 123, 255, 0.125) !important;
+  border-radius: 5px;
+  cursor: pointer;
+  background: rgba(0, 123, 255, 0.125) !important;
 }
 .isActive--green {
-    border-radius: 5px;
-    cursor: pointer;   
-    /* z-index: 10 !important;
+  border-radius: 5px;
+  cursor: pointer;
+  /* z-index: 10 !important;
     opacity: 1; */
-    background-color: rgba(0, 178, 24, 0.136) !important;
+  background-color: rgba(0, 178, 24, 0.136) !important;
 }
 .isActive--red {
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: rgba(200, 4, 20, 0.136) !important;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgba(200, 4, 20, 0.136) !important;
 }
 
-
-
-@media (max-width:768px){
-    .infoBox{
-        font-size: 0.8rem !important;
-        text-align: justify;
-    }
-    .MuiTypography-h6 {
-        font-size: 1rem !important;
-        height:60px !important;
-        text-align: justify !important;
-    }
-    .infoBox_total{
-        font-size: 0.8rem !important;
-    }
+@media (max-width: 768px) {
+  .infoBox {
+    font-size: 0.8rem !important;
+    text-align: justify;
   }
-  @media (max-width:500px){
-    .infoBox{
-        font-size: 0.4rem !important;
-        text-align: center;
-        justify-content: center;
-       
-        margin:0 !important;
-    }
-    .MuiTypography-h6 {
-        
-        font-size: 1rem !important;
-        height:60px !important;
-    }
-    .infoBox_total{
-       
-        font-size: 0.5rem !important;
-    }
-    .infoBox_cases{
-        font-size: 1.25rem !important;
-    }
-    .infoTitle{
-        font-size: 0.7rem !important;
-    }
-    .infoboxTotalspan{
-        font-size:0.5rem !important;
-    }
+  .MuiTypography-h6 {
+    font-size: 1rem !important;
+    height: 60px !important;
+    text-align: justify !important;
   }
+  .infoBox_total {
+    font-size: 0.8rem !important;
+  }
+}
+@media (max-width: 500px) {
+  .infoBox {
+    font-size: 0.4rem !important;
+    text-align: center;
+    justify-content: center;
+
+    margin: 0 !important;
+  }
+  .MuiTypography-h6 {
+    font-size: 1rem !important;
+    height: 60px !important;
+  }
+  .infoBox_total {
+    font-size: 0.5rem !important;
+  }
+  .infoBox_cases {
+    font-size: 1.25rem !important;
+  }
+  .infoTitle {
+    font-size: 0.7rem !important;
+  }
+  .infoboxTotalspan {
+    font-size: 0.5rem !important;
+  }
+}

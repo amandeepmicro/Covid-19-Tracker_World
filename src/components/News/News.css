@@ -1,43 +1,51 @@
-.MuiInputBase-input{
-    border-bottom:1px solid white !important;
+.MuiInputBase-input {
+  border-bottom: 1px solid white !important;
 }
 /* spinner */
 .svgLoader {
-    animation: spin 1s linear infinite;
-    margin: auto;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+.divLoader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
-  .divLoader {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
+  100% {
+    transform: rotate(360deg);
   }
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-
+}
 
 /* heading */
-h1 { font-weight: 900; line-height: 1em; margin: 0.3em 0; }
-h1 b { font-weight: 100; }
+h1 {
+  font-weight: 900;
+  line-height: 1em;
+  margin: 0.3em 0;
+}
+h1 b {
+  font-weight: 100;
+}
 
-.header{
+.header {
   display: flex;
-  align-items: center; 
-  justify-content: center; 
-  flex-direction: row; 
-  color:white;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  color: white;
 }
 
-@media (max-width:760px){
-
-.MuiGridListTileBar-titleWrap .MuiGridListTileBar-title {
-    font-size:0.7rem;
-}
-.MuiGridListTileBar-titleWrap .MuiGridListTileBar-subtitle{
-    font-size:0.4rem;
-}
+@media (max-width: 760px) {
+  .MuiGridListTileBar-titleWrap .MuiGridListTileBar-title {
+    font-size: 0.7rem;
+  }
+  .MuiGridListTileBar-titleWrap .MuiGridListTileBar-subtitle {
+    font-size: 0.4rem;
+  }
 }

@@ -1,61 +1,60 @@
-
 table {
-    justify-content: start;
-    width: 100% !important;
-    height: 31.5rem;
-    border-collapse: collapse;
-    border-spacing: 0;  
-    overflow: scroll;
+  justify-content: start;
+  width: 100% !important;
+  height: 31.5rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+  overflow: scroll;
 }
-table td{
-    padding:0.6rem;
+table td {
+  padding: 0.6rem;
 }
 table th {
-    padding:0.3rem;
-    background-color: black !important;
-    color:#ffffff;
+  padding: 0.3rem;
+  background-color: black !important;
+  color: #ffffff;
 }
-table th, td {
-    text-align: center;
-  }
-table tr:nth-of-type(odd){
-    color:white !important;
-    background-color: transparent;
+table th,
+td {
+  text-align: center;
 }
-table tr:nth-of-type(even){
-    color:white !important;
-    background-color: rgba(12, 19, 23, 0.979) !important;
+table tr:nth-of-type(odd) {
+  color: white !important;
+  background-color: transparent;
 }
-
+table tr:nth-of-type(even) {
+  color: white !important;
+  background-color: rgba(12, 19, 23, 0.979) !important;
+}
 
 .thead {
-   
-    align-items: center;
-    justify-content: center;
-    font-size: 0.9rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
 }
-.MuiTableSortLabel-root.MuiTableSortLabel-active.MuiTableSortLabel-root.MuiTableSortLabel-active .MuiTableSortLabel-icon {
-    font-size: inherit;
+.MuiTableSortLabel-root.MuiTableSortLabel-active.MuiTableSortLabel-root.MuiTableSortLabel-active
+  .MuiTableSortLabel-icon {
+  font-size: inherit;
 }
-.MuiTableSortLabel-icon{
-    opacity:1 !important;
-    color:#ffffff !important;
+.MuiTableSortLabel-icon {
+  opacity: 1 !important;
+  color: #ffffff !important;
 }
-@media (max-width:500px){
-    table,.thead{
-        font-size: 0.6rem;
-    }
-    table{
-        height: 100% !important;
-    }
-    .MuiTableSortLabel-icon{
-        font-size: 0.7rem !important;
-    }
-    /* .MuiTableSortLabel-root.MuiTableSortLabel-active.MuiTableSortLabel-root.MuiTableSortLabel-active .MuiTableSortLabel-icon {
+@media (max-width: 500px) {
+  table,
+  .thead {
+    font-size: 0.6rem;
+  }
+  table {
+    height: 100% !important;
+  }
+  .MuiTableSortLabel-icon {
+    font-size: 0.7rem !important;
+  }
+  /* .MuiTableSortLabel-root.MuiTableSortLabel-active.MuiTableSortLabel-root.MuiTableSortLabel-active .MuiTableSortLabel-icon {
         font-size: 0.3rem !important;
     } */
-    table td{
-        padding:0.4rem;
-    }
+  table td {
+    padding: 0.4rem;
+  }
 }
-

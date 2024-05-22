@@ -1,116 +1,102 @@
-
-*{
-  margin:0;
+* {
+  margin: 0;
 }
-body{
+body {
   /* background-color: #c5c5c5c4; */
   height: 100%;
   background: rgba(19, 28, 35, 0.863);
- 
 }
 html {
   scroll-behavior: smooth;
 }
 
 .app {
-  display:flex;
+  display: flex;
   justify-content: space-evenly;
-  padding:20px;
+  padding: 20px;
 }
-
 
 /* dropdown */
 .MuiNativeSelect-select {
- 
   /* background-color: rgba(0, 0, 0, 0.721) !important; */
-  color:white !important;
-  border:1px inset rgb(233, 232, 232) !important;
-  box-shadow:0px 0px 20px rgb(171, 171, 171);
-  border-radius:5px !important;
+  color: white !important;
+  border: 1px inset rgb(233, 232, 232) !important;
+  box-shadow: 0px 0px 20px rgb(171, 171, 171);
+  border-radius: 5px !important;
 }
-.MuiNativeSelect-icon{
-  
-  color:white !important;
+.MuiNativeSelect-icon {
+  color: white !important;
 }
 .MuiNativeSelect-select option {
- 
   background-color: rgba(0, 0, 0, 0.829) !important;
-  color:white !important;
- 
+  color: white !important;
 }
-
 
 /* header */
 .app_header {
-  display:flex;
+  display: flex;
   align-items: center;
-  margin-bottom:20px;
+  margin-bottom: 20px;
   flex-direction: column !important;
-  
 }
 .app_header > h1 {
-  
   text-shadow: 4px 2px 4px #747373be;
-  color:#2b2a2aec;
+  color: #2b2a2aec;
   font-size: 2rem;
   text-align: center;
 }
 
 /* out of 1 it ocuupies 0.8 fraction */
-.app_left{
-  flex:0.8;
+.app_left {
+  flex: 0.8;
 }
 .app_stats {
-  display:flex;
+  display: flex;
   justify-content: space-between;
 }
-.app_right{
-  display:flex;
-  flex-direction:column;
+.app_right {
+  display: flex;
+  flex-direction: column;
 }
 
- .item{
+.item {
   border-radius: 30px !important;
   box-shadow: 0 0 10px -2px rgba(186, 184, 184, 0.5) !important;
-  margin:1rem;
-  background-color:rgba(19, 28, 35, 0.863) !important ;
-
+  margin: 1rem;
+  background-color: rgba(19, 28, 35, 0.863) !important ;
 }
-.app_graph{ 
-  height:18rem;
+.app_graph {
+  height: 18rem;
 }
 .app_right .app_graph .MuiCardContent-root {
   height: 5rem !important;
-  flex-grow:1;
+  flex-grow: 1;
 }
 
-.app_graphTitle{
-  
+.app_graphTitle {
   text-align: center;
   margin: 15px 30px;
   border-radius: 10px;
   /* font-family:helvetica; */
   text-shadow: 2px 2px 2px #b1b1b1be;
   /* background-color:#2b2a2aec; */
-  color:#ffff;
- 
+  color: #ffff;
 }
-@media (max-width:990px){
-  .app{
+@media (max-width: 990px) {
+  .app {
     flex-direction: column;
   }
-  .app_right{
+  .app_right {
     margin-top: 20px;
   }
-  
+
   .app_header > h1 {
     font-size: 1.5rem;
   }
-  
 }
-@media (max-width:500px){
-  .app_stats{
-    margin:0 !important;
-    padding:0 !important;
+@media (max-width: 500px) {
+  .app_stats {
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }
